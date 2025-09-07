@@ -4,6 +4,7 @@
         Click, Middle
         Sleep, 20 
     }
+Click, up 
 return
 
 ~RButton::return
