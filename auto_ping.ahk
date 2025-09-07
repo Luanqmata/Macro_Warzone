@@ -1,10 +1,8 @@
 ~RButton & LButton::
-    While (GetKeyState("LButton", "P") && GetKeyState("RButton", "P"))
+    While GetKeyState("LButton", "P") && GetKeyState("RButton", "P")
     {
         Click, Middle
-        Sleep, 20 
+        Sleep, 90 
     }
 Click, up 
 return
-
-~RButton::return
