@@ -1,5 +1,4 @@
 ~RButton & LButton::
-    ; Loop enquanto ambos os botões estiverem pressionados
     While (GetKeyState("LButton", "P") && GetKeyState("RButton", "P"))
     {
         Click, Middle
