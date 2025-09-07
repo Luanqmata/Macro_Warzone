@@ -1,4 +1,3 @@
-
 ~LButton::
 While GetKeyState("LButton","P")
 {   
