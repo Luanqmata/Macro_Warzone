@@ -3,7 +3,7 @@
 While GetKeyState("RButton","P") && GetKeyState("LButton","P")
 { 
     Click, Middle
-    Sleep, 300
+    Sleep, 460
 }
 Click, up 
 return
