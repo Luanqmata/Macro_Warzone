@@ -1,5 +1,7 @@
 China Macro's Menu - README
 
+<img width="351" height="341" alt="image" src="https://github.com/user-attachments/assets/b37cde4c-6f8c-4180-af69-765289c97475" />
+
 Descrição:
 -------------
 Este programa é um painel de macros para mouse, desenvolvido em AutoHotkey (AHK). 
