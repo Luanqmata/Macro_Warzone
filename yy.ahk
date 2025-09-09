@@ -1,8 +1,9 @@
 XButton1::
-While GetKeyState("XButton1","P")
+While GetKeyState("XButton1","P") ; mouse4
 {
     ;Send {WheelDown}
     Send {WheelDown}
 }
 return
+
 
