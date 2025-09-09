@@ -1,8 +1,9 @@
-# China Macro's Menu - SOBRE 🎮⚡
+# China Macro's Menu - 🎮⚡
 <p align="center">
    <img width="351" height="341" alt="image" src="https://github.com/user-attachments/assets/b37cde4c-6f8c-4180-af69-765289c97475" />
    <img width="353" height="346" alt="image" src="https://github.com/user-attachments/assets/a9cc035e-deea-4002-b1b1-213798abb1cd" />
 </p>
+
 ## 📌 Descrição
 Este programa é um painel de macros para mouse, desenvolvido em **AutoHotkey (AHK)**.  
 Ele permite ativar ou desativar três funções diferentes de forma simples através de uma interface gráfica:
