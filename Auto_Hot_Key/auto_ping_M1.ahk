@@ -1,7 +1,8 @@
-~RButton::
-While GetKeyState("RButton","P")
+~LButton::
+While GetKeyState("LButton","P")
 { 
-    Click, Middle      ; simula clique do scroll
-    Sleep, 500         ; espera 500ms antes do próximo
+    Click, Middle
+    Sleep, 300
 }
+Click up
 return
