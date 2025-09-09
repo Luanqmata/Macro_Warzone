@@ -7,42 +7,39 @@ SetBatchLines, -1
 Gui, Color, 0x101010 ; fundo preto escuro
 Gui, Font, s10 cWhite, Verdana
 
-; Título
-Gui, Add, Text, x0 y10 w350 h40 Center cRed, China Macro's Menu
+; Título com borda
+Gui, Add, Text, x0 y10 w350 h40 Center cRed BackgroundTrans, China Macro's Menu
 Gui, Font, s8 cGray
-Gui, Add, Text, x0 y40 w350 h20 Center, Use os botoes para ativar/desativar os Macros
+Gui, Add, Text, x0 y45 w350 h20 Center, Use os botoes para ativar/desativar os Macros
 
 ; Separador
-Gui, Add, Text, x10 y65 w330 h2 BackgroundGray,
+Gui, Add, Text, x20 y70 w310 h1 BackgroundGray,
 
 ; Botão Auto Ping (primeiro - centralizado)
 Gui, Font, s10 cWhite
-Gui, Add, Button, x75 y80 w200 h50 gTogglePing vBtnPing, Auto Ping - Mouse1
-Gui, Add, Progress, x75 y135 w200 h8 vProgressPing BackgroundRed cGreen, 0
-Gui, Font, s8 cLightGray
-Gui, Add, Text, x75 y145 w200 h20 Center, Faz ping automático enquanto atira
+Gui, Add, Button, x75 y70 w200 h50 gTogglePing vBtnPing, Auto Ping - Mouse1
+Gui, Add, Progress, x75 y125 w200 h6 vProgressPing Background222222 c00FF00, 0
+Gui, Font, s8 cAAAAAA
 
 ; Separador
-Gui, Add, Text, x10 y170 w330 h2 BackgroundGray,
+Gui, Add, Text, x20 y173 w310 h1 BackgroundGray,
 
 ; Botão YY (segundo - centralizado)
 Gui, Font, s10 cWhite
-Gui, Add, Button, x75 y180 w200 h50 gToggleYY vBtnYY, YY - Mouse4
-Gui, Add, Progress, x75 y235 w200 h8 vProgressYY BackgroundRed cGreen, 0
-Gui, Font, s8 cLightGray
-Gui, Add, Text, x75 y245 w200 h20 Center, Mantém YY ativo enquanto pressionado
+Gui, Add, Button, x75 y145 w200 h50 gToggleYY vBtnYY, YY - Mouse4
+Gui, Add, Progress, x75 y200 w200 h6 vProgressYY Background222222 c00FF00, 0
+Gui, Font, s8 cAAAAAA
 
 ; Separador
-Gui, Add, Text, x10 y270 w330 h2 BackgroundGray,
+Gui, Add, Text, x20 y276 w310 h1 BackgroundGray,
 
 ; Botão No Recoil (terceiro - centralizado)
 Gui, Font, s10 cWhite
-Gui, Add, Button, x75 y280 w200 h50 gToggleRecoil vBtnRecoil, No Recoil - Mouse5
-Gui, Add, Progress, x75 y335 w200 h8 vProgressRecoil BackgroundRed cGreen, 0
-Gui, Font, s8 cLightGray
-Gui, Add, Text, x75 y345 w200 h20 Center, Controla o recuo da arma automaticamente
+Gui, Add, Button, x75 y220 w200 h50 gToggleRecoil vBtnRecoil, No Recoil - Mouse5
+Gui, Add, Progress, x75 y275 w200 h6 vProgressRecoil Background222222 c00FF00, 0
+Gui, Font, s8 cAAAAAA
 
-Gui, Show, w350 h380, China Macro's Menu
+Gui, Show, w350 h320, China Macro's Menu
 return
 
 ; ======== VARIÁVEIS =========
@@ -54,11 +51,13 @@ Recoil_Active := false
 TogglePing:
 Ping_Active := !Ping_Active
 if (Ping_Active) {
-GuiControl, +cLime, BtnPing
+GuiControl, +Background333333, BtnPing
+GuiControl, +c00FF00, BtnPing
 GuiControl,, ProgressPing, 100
-GuiControl,, BtnPing, Auto Ping - ATIVADO
+GuiControl,, BtnPing, [ATIVO] Auto Ping
 } else {
-GuiControl, +Default, BtnPing
+GuiControl, +BackgroundDefault, BtnPing
+GuiControl, +cWhite, BtnPing
 GuiControl,, ProgressPing, 0
 GuiControl,, BtnPing, Auto Ping - Mouse1
 }
@@ -67,11 +66,13 @@ return
 ToggleYY:
 YY_Active := !YY_Active
 if (YY_Active) {
-GuiControl, +cLime, BtnYY
+GuiControl, +Background333333, BtnYY
+GuiControl, +c00FF00, BtnYY
 GuiControl,, ProgressYY, 100
-GuiControl,, BtnYY, YY - ATIVADO
+GuiControl,, BtnYY, [ATIVO] YY
 } else {
-GuiControl, +Default, BtnYY
+GuiControl, +BackgroundDefault, BtnYY
+GuiControl, +cWhite, BtnYY
 GuiControl,, ProgressYY, 0
 GuiControl,, BtnYY, YY - Mouse4
 }
@@ -80,11 +81,13 @@ return
 ToggleRecoil:
 Recoil_Active := !Recoil_Active
 if (Recoil_Active) {
-GuiControl, +cLime, BtnRecoil
+GuiControl, +Background333333, BtnRecoil
+GuiControl, +c00FF00, BtnRecoil
 GuiControl,, ProgressRecoil, 100
-GuiControl,, BtnRecoil, No Recoil - ATIVADO
+GuiControl,, BtnRecoil, [ATIVO] No Recoil
 } else {
-GuiControl, +Default, BtnRecoil
+GuiControl, +BackgroundDefault, BtnRecoil
+GuiControl, +cWhite, BtnRecoil
 GuiControl,, ProgressRecoil, 0
 GuiControl,, BtnRecoil, No Recoil - Mouse5
 }
@@ -120,5 +123,7 @@ Click, up
 }
 return
 
+; Tecla de atalho para fechar (Alt+F4 ou Esc)
+~Esc::
 GuiClose:
 ExitApp
