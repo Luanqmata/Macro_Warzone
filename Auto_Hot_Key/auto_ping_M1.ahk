@@ -2,6 +2,6 @@
 While GetKeyState("LButton","P")
 { 
     Click, Middle
-    Sleep, 300
+    Sleep, 460
 }
 return
