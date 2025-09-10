@@ -6,9 +6,6 @@ SetBatchLines, -1
 ; ======== GUI =========
 Gui, Color, 0x101010 ; fundo preto escuro
 
-; ======== GUI =========
-Gui, Color, 0x101010 ; fundo preto escuro
-
 ; ===== Título =====
 Gui, Font, s14 cRed Bold, Arial Black
 Gui, Add, Text, x0 y10 w350 h30 Center BackgroundTrans, CHINA MACRO'S MENU
