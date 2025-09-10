@@ -5,29 +5,37 @@ SetBatchLines, -1
 
 ; ======== GUI =========
 Gui, Color, 0x101010 ; fundo preto escuro
+
+; ======== GUI =========
+Gui, Color, 0x101010 ; fundo preto escuro
+
+; ===== Título =====
+Gui, Font, s14 cRed Bold, Arial Black
+Gui, Add, Text, x0 y10 w350 h30 Center BackgroundTrans, CHINA MACRO'S MENU
+
+; ===== Descrição =====
+Gui, Font, s9 cGray, Verdana
+Gui, Add, Text, x0 y45 w350 h18 Center, Macro para Call of Duty Warzone
+
+; ===== Botão Auto Ping =====
 Gui, Font, s10 cWhite, Verdana
+Gui, Add, Button, x75 y75 w200 h45 gTogglePing vBtnPing, Auto Ping - Mouse1
+Gui, Add, Progress, x75 y123 w200 h6 vProgressPing Background222222 c00FF00, 0
 
-; Título
-Gui, Add, Text, x0 y10 w350 h35 Center cRed BackgroundTrans, China Macro's Menu
-Gui, Font, s8 cGray
-Gui, Add, Text, x0 y40 w350 h18 Center, Use os botoes para ativar/desativar os Macros
+; ===== Botão YY =====
+Gui, Add, Button, x75 y150 w200 h45 gToggleYY vBtnYY, YY - Mouse4
+Gui, Add, Progress, x75 y198 w200 h6 vProgressYY Background222222 c00FF00, 0
 
-; Botão Auto Ping
-Gui, Font, s10 cWhite
-Gui, Add, Button, x75 y70 w200 h45 gTogglePing vBtnPing, Auto Ping - Mouse1
-Gui, Add, Progress, x75 y118 w200 h6 vProgressPing Background222222 c00FF00, 0
+; ===== Botão No Recoil =====
+Gui, Add, Button, x75 y225 w200 h45 gToggleRecoil vBtnRecoil, No Recoil - Mouse5
+Gui, Add, Progress, x75 y273 w200 h6 vProgressRecoil Background222222 c00FF00, 0
 
-; Botão YY
-Gui, Font, s10 cWhite
-Gui, Add, Button, x75 y145 w200 h45 gToggleYY vBtnYY, YY - Mouse4
-Gui, Add, Progress, x75 y193 w200 h6 vProgressYY Background222222 c00FF00, 0
+; ===== Rodapé =====
+Gui, Font, s7 cGray, Verdana
+Gui, Add, Text, x0 y300 w350 h15 Center BackgroundTrans, Alpha 1.5v | ©Direitos Autorais
 
-; Botão No Recoil
-Gui, Font, s10 cWhite
-Gui, Add, Button, x75 y220 w200 h45 gToggleRecoil vBtnRecoil, No Recoil - Mouse5
-Gui, Add, Progress, x75 y268 w200 h6 vProgressRecoil Background222222 c00FF00, 0
-
-Gui, Show, w350 h310, China Macro's Menu
+; Mostrar GUI
+Gui, Show, w350 h330, China Macro's Menu
 return
 
 ; ======== VARIÁVEIS =========
