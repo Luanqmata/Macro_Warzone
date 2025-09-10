@@ -17,15 +17,15 @@ Gui, Add, Text, x0 y45 w350 h18 Center, Macro para Call of Duty Warzone
 ; ===== Botão Auto Ping =====
 Gui, Font, s10 cWhite, Verdana
 Gui, Add, Button, x75 y75 w200 h45 gTogglePing vBtnPing, Auto Ping - Mouse1
-Gui, Add, Progress, x75 y123 w200 h6 vProgressPing Background222222 c00FF00, 0
+Gui, Add, Progress, x75 y123 w200 h6 vProgressPing Background8B0000 c00FF00, 0
 
 ; ===== Botão YY =====
 Gui, Add, Button, x75 y150 w200 h45 gToggleYY vBtnYY, YY - Mouse4
-Gui, Add, Progress, x75 y198 w200 h6 vProgressYY Background222222 c00FF00, 0
+Gui, Add, Progress, x75 y198 w200 h6 vProgressYY Background8B0000 c00FF00, 0
 
 ; ===== Botão No Recoil =====
 Gui, Add, Button, x75 y225 w200 h45 gToggleRecoil vBtnRecoil, No Recoil - Mouse5
-Gui, Add, Progress, x75 y273 w200 h6 vProgressRecoil Background222222 c00FF00, 0
+Gui, Add, Progress, x75 y273 w200 h6 vProgressRecoil Background8B0000 c00FF00, 0
 
 ; ===== Rodapé =====
 Gui, Font, s7 cGray, Verdana
@@ -117,3 +117,4 @@ Click, up
 return
 
 ExitApp
+
