@@ -39,77 +39,76 @@ Recoil_Active := false
 TogglePing:
 Ping_Active := !Ping_Active
 if (Ping_Active) {
-    GuiControl, +Background333333, BtnPing
-    GuiControl, +c00FF00, BtnPing
-    GuiControl,, ProgressPing, 100
-    GuiControl,, BtnPing, [ATIVO] Auto Ping
+GuiControl, +Background333333, BtnPing
+GuiControl, +c00FF00, BtnPing
+GuiControl,, ProgressPing, 100
+GuiControl,, BtnPing, [ATIVO] Auto Ping
 } else {
-    GuiControl, +BackgroundDefault, BtnPing
-    GuiControl, +cWhite, BtnPing
-    GuiControl,, ProgressPing, 0
-    GuiControl,, BtnPing, Auto Ping - Mouse1
+GuiControl, +BackgroundDefault, BtnPing
+GuiControl, +cWhite, BtnPing
+GuiControl,, ProgressPing, 0
+GuiControl,, BtnPing, Auto Ping - Mouse1
 }
 return
 
 ToggleYY:
 YY_Active := !YY_Active
 if (YY_Active) {
-    GuiControl, +Background333333, BtnYY
-    GuiControl, +c00FF00, BtnYY
-    GuiControl,, ProgressYY, 100
-    GuiControl,, BtnYY, [ATIVO] YY
+GuiControl, +Background333333, BtnYY
+GuiControl, +c00FF00, BtnYY
+GuiControl,, ProgressYY, 100
+GuiControl,, BtnYY, [ATIVO] YY
 } else {
-    GuiControl, +BackgroundDefault, BtnYY
-    GuiControl, +cWhite, BtnYY
-    GuiControl,, ProgressYY, 0
-    GuiControl,, BtnYY, YY - Mouse4
+GuiControl, +BackgroundDefault, BtnYY
+GuiControl, +cWhite, BtnYY
+GuiControl,, ProgressYY, 0
+GuiControl,, BtnYY, YY - Mouse4
 }
 return
 
 ToggleRecoil:
 Recoil_Active := !Recoil_Active
 if (Recoil_Active) {
-    GuiControl, +Background333333, BtnRecoil
-    GuiControl, +c00FF00, BtnRecoil
-    GuiControl,, ProgressRecoil, 100
-    GuiControl,, BtnRecoil, [ATIVO] No Recoil
+GuiControl, +Background333333, BtnRecoil
+GuiControl, +c00FF00, BtnRecoil
+GuiControl,, ProgressRecoil, 100
+GuiControl,, BtnRecoil, [ATIVO] No Recoil
 } else {
-    GuiControl, +BackgroundDefault, BtnRecoil
-    GuiControl, +cWhite, BtnRecoil
-    GuiControl,, ProgressRecoil, 0
-    GuiControl,, BtnRecoil, No Recoil - Mouse5
+GuiControl, +BackgroundDefault, BtnRecoil
+GuiControl, +cWhite, BtnRecoil
+GuiControl,, ProgressRecoil, 0
+GuiControl,, BtnRecoil, No Recoil - Mouse5
 }
 return
 
 ; ======== BINDS =========
 ~LButton::
 if (Ping_Active) {
-    While GetKeyState("LButton","P") {
-        Click, Middle
-        Sleep, 300
-    }
+While GetKeyState("LButton","P") {
+Click, Middle
+Sleep, 700
+}
 }
 return
 
 ~XButton1::
 if (YY_Active) {
-    While GetKeyState("XButton1","P")
-        Send {WheelDown}
+While GetKeyState("XButton1","P") {
+Send {WheelDown}
+Sleep, 310
+}
 }
 return
 
 XButton2::
 if (Recoil_Active) {
-    Click, down
-    while GetKeyState("XButton2", "P") {
-        MouseMove, 0, 4.1, 5.5, R
-        Sleep, 3
-    }
-    Click, up
+Click, down
+while GetKeyState("XButton2", "P") {
+MouseMove, 0, 4.1, 5.5, R
+Sleep, 10
+}
+Click, up
 }
 return
 
-; Tecla de atalho para fechar (Esc)
-~Esc::
-GuiClose:
 ExitApp
