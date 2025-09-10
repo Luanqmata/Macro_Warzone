@@ -8,7 +8,7 @@ Gui, Color, 0x101010 ; fundo preto escuro
 
 ; ===== Título =====
 Gui, Font, s14 cRed Bold, Arial Black
-Gui, Add, Text, x0 y10 w350 h30 Center BackgroundTrans, CHINA MACRO'S MENU
+Gui, Add, Text, x0 y10 w350 h30 Center BackgroundTrans, Invisible Assist
 
 ; ===== Descrição =====
 Gui, Font, s9 cGray, Verdana
@@ -29,7 +29,7 @@ Gui, Add, Progress, x75 y273 w200 h6 vProgressRecoil Background8B0000 c00FF00, 0
 
 ; ===== Rodapé =====
 Gui, Font, s7 cGray, Verdana
-Gui, Add, Text, x0 y300 w350 h15 Center BackgroundTrans, Alpha 1.5v | ©Direitos Autorais
+Gui, Add, Text, x0 y300 w350 h15 Center BackgroundTrans, Alpha 1.5v | ©Direitos Autorais | By: China
 
 ; Mostrar GUI
 Gui, Show, w350 h330, China Macro's Menu
@@ -117,4 +117,3 @@ Click, up
 return
 
 ExitApp
-
