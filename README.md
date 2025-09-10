@@ -1,7 +1,7 @@
 # China Macro's Menu - 🎮⚡
 <p align="center">
-   <img width="351" height="341" alt="image" src="https://github.com/user-attachments/assets/b37cde4c-6f8c-4180-af69-765289c97475" />
-   <img width="353" height="346" alt="image" src="https://github.com/user-attachments/assets/a9cc035e-deea-4002-b1b1-213798abb1cd" />
+   <img width="357" height="360" alt="image" src="https://github.com/user-attachments/assets/823f02d8-52ed-407a-af63-e88b0d7c470f" />
+   <img width="353" height="359" alt="image" src="https://github.com/user-attachments/assets/cd3061a8-a2ef-4fe8-b95b-8de90fbf1756" />
 </p>
 
 ## 📌 Descrição
