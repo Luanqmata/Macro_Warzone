@@ -1,16 +1,13 @@
-XButton2::
-if (RunSlide_Active) { ; VERIFICA SE A FUNÇÃO ESTÁ ATIVA
-While GetKeyState("XButton2","P") ; enquanto Mouse5 estiver pressionado
+x::
+if (RunSlide_Active)  ; só executa se a função estiver ativa
 {
-Send {Shift down} ; segurou Shift
-Sleep, 130 ; tempo até o próximo Shift
-Send {Shift} ; toque rápido de Shift
-Sleep, 770 ; tempo até o "c"
-Send c
-Sleep, 284 ; tempo até o próximo Shift
-Send a
-Send {Shift up} ; solta Shift antes de repetir
-Sleep, 96 ; tempo entre w e Shift
-}
+    Send {Shift down}    ; segura Shift
+    Sleep, 59            ; tempo até o próximo Shift
+    Send {Shift}         ; toque rápido de Shift
+    Sleep, 780           ; tempo até o "c"
+    Send c
+    Sleep, 380           ; tempo até o "a"
+    Send a
+    Send {Shift up}      ; solta Shift no final
 }
 return
