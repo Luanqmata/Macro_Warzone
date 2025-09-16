@@ -1,4 +1,4 @@
-# China Macro's Menu - 🎮⚡
+# China Macro's Menu - 🖱️ ⚡
 <p align="center">
    <img width="357" height="360" alt="image" src="https://github.com/user-attachments/assets/823f02d8-52ed-407a-af63-e88b0d7c470f" />
    <img width="353" height="359" alt="image" src="https://github.com/user-attachments/assets/cd3061a8-a2ef-4fe8-b95b-8de90fbf1756" />
