@@ -44,7 +44,7 @@ A interface mostra o estado de cada função usando **barras de progresso** que 
 ---
 
 ## ❌ Encerrando o programa
-- ❎ Feche a janela do menu para encerrar todas as funções.  
+- ❎ Encerre o processo no gerenciador de tarefas ou na barra lateral ao lado da hora.
 
 ---
 
